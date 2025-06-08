@@ -1,9 +1,8 @@
 """
-Модуль для визуализации структуры объектов Flet framework
-Позволяет просматривать вложенные объекты в читаемом виде
+This module for visualizing the structure of Flet framework objects.
+Allows viewing nested objects in a readable form.
 """
 
-import flet as ft
 from typing import Any, Dict, List, Union
 import json
 
@@ -289,39 +288,3 @@ def flet_to_json(obj: Any, indent: int = 2) -> str:
     return json.dumps(data, indent=indent, ensure_ascii=False, default=str)
 
 
-# Пример использования
-if __name__ == "__main__":
-    # Создаем пример структуры
-    view = ft.View(
-        route="/",
-        appbar=ft.AppBar(
-            title=ft.Text("My App"),
-            bgcolor=ft.Colors.BLUE
-        ),
-        controls=[
-            ft.Container(
-                content=ft.Row([
-                    ft.IconButton(ft.Icons.HOME, tooltip="Home"),
-                    ft.IconButton(ft.Icons.SETTINGS, tooltip="Settings"),
-                    ft.ElevatedButton("Click me", width=200)
-                ]),
-                padding=20,
-                bgcolor=ft.Colors.GREY_100
-            ),
-            ft.Text("Hello, World!", size=20),
-            ft.Column([
-                ft.TextField(label="Name", width=300),
-                ft.TextField(label="Email", width=300),
-            ])
-        ]
-    )
-    
-    print("=== Структура Flet объекта ===")
-    inspect_flet(view)
-    
-    print("\n=== В виде словаря ===")
-    import pprint
-    pprint.pprint(flet_to_dict(view))
-    
-    print("\n=== В виде JSON ===")
-    print(flet_to_json(view))
