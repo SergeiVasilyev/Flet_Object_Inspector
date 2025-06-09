@@ -170,11 +170,6 @@ class FletInspector:
         child_attrs = ['controls', 'content', 'actions', 'tabs', 'items', 
                       'leading', 'title', 'trailing', 'options']
         
-        # Проверяем различные атрибуты, которые могут содержать дочерние элементы
-        # Исключаем специальные атрибуты, которые обрабатываются отдельно
-        child_attrs = ['controls', 'content', 'actions', 'tabs', 'items', 
-                      'leading', 'trailing', 'options']
-        
         for attr in child_attrs:
             if hasattr(obj, attr):
                 value = getattr(obj, attr)
