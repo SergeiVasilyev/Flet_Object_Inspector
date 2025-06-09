@@ -1,0 +1,1 @@
+from .flet_object_inspector import inspect_flet
