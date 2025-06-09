@@ -1,8 +1,9 @@
 # Flet Object Inspector
 
-[![Python Version](https://img.shields.io/badge/python-3.7+-blue.svg)](https://python.org)
+[![Python Version](https://img.shields.io/badge/python-3.11+-blue.svg)](https://python.org)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![PyPI Version](https://img.shields.io/badge/pypi-v1.0.0-orange.svg)](https://pypi.org/project/flet-object-inspector/)
+[![TestPyPI Version](https://img.shields.io/badge/TestPyPI-v0.1.3-orange.svg)](https://test.pypi.org/project/flet-object-inspector/)
+
 
 A utility for visualizing and analyzing the structure of [Flet framework](https://flet.dev) objects. Allows easy viewing of complex nested interface structures in a readable format.
 
