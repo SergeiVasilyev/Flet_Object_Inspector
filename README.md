@@ -24,7 +24,7 @@ A utility for visualizing and analyzing the structure of [Flet framework](https:
 pip install flet-object-inspector
 
 # From test.pypi (for test versions)
-pip install -i https://test.pypi.org/simple/ flet-object-inspector
+pip install -i https://test.pypi.org/simple/flet-object-inspector
 
 # From source code
 git clone https://github.com/yourusername/flet-object-inspector.git
